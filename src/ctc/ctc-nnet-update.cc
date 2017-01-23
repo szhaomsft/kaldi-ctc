@@ -26,6 +26,10 @@
 
 extern "C" {
 #include "ctc.h"
+#ifndef ctcComputeInfo
+#define ctcComputeInfo ctcOptions
+#endif
+
 }
 
 #define WARPCTC_SAFE_CALL(fun) \
